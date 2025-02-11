@@ -36,4 +36,16 @@ Per eseguire il progetto localmente, assicurati di avere:
 
 ### 1. Creazione del Progetto
 
-Puoi creare un progetto Spring Boot tram
+Puoi creare un progetto Spring Boot tramite [Spring Initializr](https://start.spring.io/):
+
+- Scegli **Java** come linguaggio.
+- Imposta il **Group** e l'**Artifact** (per esempio `com.example.shop`).
+- Seleziona le seguenti dipendenze:
+  - **Spring Web**
+  - **Spring Data JPA**
+  - **H2 Database** (per sviluppo locale)
+  - **Spring Boot DevTools** (per il live reload)
+
+Scarica il progetto e decomprimilo, poi importalo nel tuo IDE preferito.
+
+
