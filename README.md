@@ -2,17 +2,6 @@
 
 Questo progetto crea un microservizio di e-commerce in Java utilizzando **Spring Boot**. L'applicazione espone API RESTful per gestire i prodotti, il carrello e gli ordini di un negozio online.
 
-## Indice
-
-1. [Introduzione](#introduzione)
-2. [Prerequisiti](#prerequisiti)
-3. [Setup del Progetto](#setup-del-progetto)
-4. [Struttura del Progetto](#struttura-del-progetto)
-5. [Implementazione delle API](#implementazione-delle-api)
-6. [Test delle API](#test-delle-api)
-7. [Tecnologie Utilizzate](#tecnologie-utilizzate)
-8. [Conclusioni](#conclusioni)
-
 ## Introduzione
 
 Questo progetto implementa un microservizio di e-commerce che consente di gestire:
@@ -27,7 +16,7 @@ Le funzionalità sono esposte tramite API REST, che possono essere utilizzate da
 
 Per eseguire il progetto localmente, assicurati di avere:
 
-- **Java 11 o superiore**
+- **Java 21 o superiore**
 - **Maven** o **Gradle** per la gestione delle dipendenze
 - Un IDE come **IntelliJ IDEA**, **Eclipse** o **VS Code**
 - **Postman** o un altro strumento per testare le API
@@ -43,9 +32,11 @@ Puoi creare un progetto Spring Boot tramite [Spring Initializr](https://start.sp
 - Seleziona le seguenti dipendenze:
   - **Spring Web**
   - **Spring Data JPA**
-  - **H2 Database** (per sviluppo locale)
+  - **MySQL** (per sviluppo locale)
   - **Spring Boot DevTools** (per il live reload)
 
 Scarica il progetto e decomprimilo, poi importalo nel tuo IDE preferito.
+
+Avvia il progetto, prima mvn clean install.
 
 
