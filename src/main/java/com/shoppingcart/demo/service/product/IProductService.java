@@ -3,6 +3,7 @@ package com.shoppingcart.demo.service.product;
 import com.shoppingcart.demo.dto.ProductDto;
 import com.shoppingcart.demo.model.Product;
 import com.shoppingcart.demo.request.AddProductRequest;
+import com.shoppingcart.demo.request.ProductUpdateRequest;
 
 import java.util.List;
 

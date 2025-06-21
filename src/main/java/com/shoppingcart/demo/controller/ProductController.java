@@ -4,6 +4,7 @@ import com.shoppingcart.demo.dto.ProductDto;
 import com.shoppingcart.demo.exceptions.ResourceNotFoundException;
 import com.shoppingcart.demo.model.Product;
 import com.shoppingcart.demo.request.AddProductRequest;
+import com.shoppingcart.demo.request.ProductUpdateRequest;
 import com.shoppingcart.demo.response.ApiResponse;
 import com.shoppingcart.demo.service.product.IProductService;
 import lombok.RequiredArgsConstructor;

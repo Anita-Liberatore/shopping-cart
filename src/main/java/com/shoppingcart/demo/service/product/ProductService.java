@@ -10,6 +10,7 @@ import com.shoppingcart.demo.repository.CategoryRepository;
 import com.shoppingcart.demo.repository.ImageRepository;
 import com.shoppingcart.demo.repository.ProductRepository;
 import com.shoppingcart.demo.request.AddProductRequest;
+import com.shoppingcart.demo.request.ProductUpdateRequest;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
@@ -27,6 +28,11 @@ public class ProductService implements IProductService {
 
     @Override
     public Product addProduct(AddProductRequest request) {
+        // check if the category is found in the DB
+        // If Yes, set it as the new product category
+        // If No, the save it as a new category
+        // The set as the new product category.
+
         Category category = Optional.ofNullable(categoryRepository.findByName(request.getCategory().getName()))
                 .orElseGet(() -> {
                     Category newCategory = new Category(request.getCategory().getName());

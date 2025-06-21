@@ -1,5 +1,6 @@
 package com.shoppingcart.demo.service.user;
 
+import com.shoppingcart.demo.dto.UserDto;
 import com.shoppingcart.demo.exceptions.AlreadyExistsException;
 import com.shoppingcart.demo.exceptions.ResourceNotFoundException;
 import com.shoppingcart.demo.model.User;
@@ -53,5 +54,10 @@ public class UserService implements IUserService {
         userRepository.findById(userId).ifPresentOrElse(userRepository :: delete, () ->{
             throw new ResourceNotFoundException("User not found!");
         });
+    }
+
+    @Override
+    public UserDto convertUserToDto(User user) {
+        return modelMapper.map(user, UserDto.class);
     }
 }
