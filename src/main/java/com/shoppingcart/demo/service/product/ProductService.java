@@ -10,7 +10,6 @@ import com.shoppingcart.demo.repository.CategoryRepository;
 import com.shoppingcart.demo.repository.ImageRepository;
 import com.shoppingcart.demo.repository.ProductRepository;
 import com.shoppingcart.demo.request.AddProductRequest;
-import com.shoppingcart.demo.request.ProductUpdateRequest;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
